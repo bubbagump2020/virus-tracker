@@ -1,4 +1,6 @@
 import React from 'react'
+import { VectorMap } from '@south-paw/react-vector-maps'
+import UsaMap from '../../map/usa.json'
 
 const TexasMumps = () => {
     const [data, setData] = React.useState([])
@@ -16,7 +18,7 @@ const TexasMumps = () => {
     let mumpsTotal = 0;
 
     const showTexasMumps = (data) => {
-        console.log(data)
+        console.log(UsaMap)
         return data.map(dataPoint => {
             return(
                 <div>
@@ -31,8 +33,7 @@ const TexasMumps = () => {
 
     return(
         <div>
-            {showTexasMumps(data)}
-            Total: {mumpsTotal}
+            <VectorMap {...UsaMap} />
         </div>
     )
 }
