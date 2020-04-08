@@ -43,6 +43,8 @@ const HomePage = () => {
         <div>
             <h1>Various common diseases in the US, by State and by County</h1>
             <USAStates data={allData}/>
+            <p>Data is from the Centers for Disease Control and Prevention</p>
+            <p>Created by Kevin Bagnall, April 2020</p>
         </div>
     )
 }
