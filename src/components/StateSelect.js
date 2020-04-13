@@ -31,4 +31,3 @@ const StateSelect = (props) => {
 
 export default StateSelect;
 
-// att in plano, texas 2 - 3 year contract, amdox for att w2 salaried employee of agreeya solutions 

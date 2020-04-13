@@ -55,6 +55,7 @@ const HomePage = () => {
                     mafData={mafData}
                     rabiesData={rabiesData}
                     measlesData={measlesData}
+                    selectedDisease={selectedDisease.name.toUpperCase() }
                     selectedState={selectedState.name.toUpperCase()}
                     selectedStateData={stateData}
                 />
