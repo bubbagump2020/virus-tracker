@@ -1,28 +1,20 @@
 import React from 'react';
+import Navbar from 'react-bootstrap/Navbar'
+import KingCon from './components/visualization/KingCon';
 
-import mumpsData from './components/data/mumps'
-import { render } from '@testing-library/react';
+const App = () => {
 
-class App extends React.Component{
-  constructor(props){
-    super(props)
-    this.state = { testData: [] }
-  }
-
-  async componentDidMount(){
-    this.setState({
-      testData: await mumpsData()
-    })
-  }
-
-  render(){
-    
     return(
       <div>
-          {console.log(this.state.testData)}
+        <Navbar>
+          <Navbar.Brand>Common Infectious Diseases in the US</Navbar.Brand>
+        </Navbar>
+        <KingCon />
+        <Navbar fixed="bottom" variant="light">
+          <Navbar.Text>Created by Kevin Bagnall; 2020</Navbar.Text>
+        </Navbar>
       </div>
     )
-  }
 
 }
 
