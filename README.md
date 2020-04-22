@@ -7,8 +7,8 @@ To be deployed on Heroku once I have 5 diseases visualized
 
 ##### Diseases
 
-Lyme Disease
-Meningococcal
-~~Mumps~~
-Salmonella
-Tuberculosis
+- Lyme Disease
+- Meningococcal
+- ~~Mumps~~
+- Salmonella
+- Tuberculosis
